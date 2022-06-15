@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  height: 10vh;
+}
+.header_logo img {
+  width: 100%;
+}
+.header_nav {
+  padding-left: 20%;
+}
+.header_nav a {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 80px;
+  position: relative;
+}
+.header_nav a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #FFF;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.header_nav a:hover:after,
+.header_nav a:focus:after {
+  width: 100%;
+}
+/*# sourceMappingURL=header.css.map */

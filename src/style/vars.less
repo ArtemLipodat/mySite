@@ -1,0 +1,24 @@
+@textColor: #FFF;
+@background: #000;
+@purple: #C63EC0;
+@blue: #24469C;
+@lBlue: #2C5CD8;
+
+@after_link : {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  opacity: 0.5;
+  background-color: @textColor;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+@hover_link : {
+  &:hover:after,
+  &:focus:after{
+    width: 100%;
+  }
+}
