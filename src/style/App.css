@@ -1,6 +1,7 @@
 @import "~normalize.css";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+@import "hover.css";
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -196,13 +197,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .services_item_list_content {
   width: 400px;
   height: 300px;
+  padding: 30px;
+  position: relative;
   border-bottom: 1px solid #24469C;
   margin-bottom: 100px;
   cursor: pointer;
+}
+.services_item_list_content_hover {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .services_item_list_content span {
   font-weight: 500;
@@ -218,6 +227,26 @@
   font-weight: 400;
   font-size: 20px;
   padding-top: 20px;
+}
+.services_item_list_content:hover > .services_item_list_content_hover {
+  display: inline-block;
+  position: absolute;
+  background: red;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  animation: opacity 0.5s ease forwards;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hvr-reveal:before {
+  border-color: #24469C;
 }
 body {
   font-family: 'Montserrat', sans-serif;

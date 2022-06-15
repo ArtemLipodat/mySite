@@ -69,7 +69,10 @@ function Main(props) {
                 <h2>СПЕКТР УСЛУГ</h2>
                 <div className={'services_item'}>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
+                            <div className={'services_item_list_content_hover'}>
+                                aaaaaaaaaaaaaa
+                            </div>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>
@@ -80,7 +83,7 @@ function Main(props) {
                         </div>
                     </div>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>
@@ -91,7 +94,7 @@ function Main(props) {
                         </div>
                     </div>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>
@@ -102,7 +105,7 @@ function Main(props) {
                         </div>
                     </div>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>
@@ -113,7 +116,7 @@ function Main(props) {
                         </div>
                     </div>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>
@@ -124,7 +127,7 @@ function Main(props) {
                         </div>
                     </div>
                     <div className={'services_item_list'}>
-                        <div className={"services_item_list_content"}>
+                        <div className={"services_item_list_content hvr-reveal"}>
                             <span>ИНТЕРНЕТ-МАГАЗИН</span>
                             <ul>
                                 <li>самый быстрый спопоб покупки</li>

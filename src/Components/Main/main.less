@@ -125,9 +125,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
       &_content{
         width: 400px;
         height: 300px;
+        padding: 30px;
+        position: relative;
+        &_hover{
+          display: none;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
         span{
           font-weight: 500;
           font-size: 32px;
@@ -149,4 +157,22 @@
       }
     }
   }
+}
+
+.services_item_list_content:hover > .services_item_list_content_hover{
+  display: inline-block;
+  position: absolute;
+  background: red;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  animation: opacity 0.5s ease forwards;
+}
+@keyframes opacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.hvr-reveal:before{
+  border-color: @blue;
 }
